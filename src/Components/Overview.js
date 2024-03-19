@@ -13,19 +13,19 @@ const Overview = () => {
             <td>
                 {currentDisplay.borders ? currentDisplay.borders.map((e,i, arr) => {
                     if(i + 1 === arr.length){
-                        return `{e}`;
+                        return `${e}`;
                     } else{
-                        return `{e}, `;
+                        return `${e}, `;
                     }
                 }): "N/A"}
             </td>
         </tr>
         <tr>
-            <td> Capitol: </td>
+            <td> Capital: </td>
             <td>
-                {currentDisplay.capital.map((e) => {
+                {currentDisplay.capital.map((e) => (
                    <td>{e}</td>
-                })}
+                ))}
             </td>
         </tr>
         <tr>
